@@ -14,6 +14,7 @@ export async function getStaticProps() {
     props: {
       posts: res.items.map((el) => el.fields),
     },
+    revalidate: 1,
   };
 }
 
