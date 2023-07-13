@@ -1,18 +1,18 @@
-import { createClient } from "contentful";
+// import { createClient } from "contentful";
 import { PostType } from "@/types/PostType";
 import Post from "@/components/Post";
 
 export async function getStaticProps() {
-  const client = createClient({
-    space: "tt7atva7xy5o",
-    accessToken: "xCw1D9u20ncH5qtp6n_9CGTJFWYZQ5ItciQLgmQ7ldE",
-  });
+  // const client = createClient({
+  //   space: "tt7atva7xy5o",
+  //   accessToken: "xCw1D9u20ncH5qtp6n_9CGTJFWYZQ5ItciQLgmQ7ldE",
+  // });
 
-  const res = await client.getEntries({ content_type: "post" });
+  // const res = await client.getEntries({ content_type: "post" });
 
   return {
     props: {
-      posts: res.items.map((el) => el.fields),
+      // posts: res.items.map((el) => el.fields),
     },
   };
 }
